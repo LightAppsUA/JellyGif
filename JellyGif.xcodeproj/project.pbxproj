@@ -15,6 +15,7 @@
 		8C8F6E9E246EEE650036F3FD /* GifInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F6E9D246EEE650036F3FD /* GifInfo.swift */; };
 		8C8F6EA0246EEEEF0036F3FD /* JellyGifOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F6E9F246EEEEF0036F3FD /* JellyGifOperation.swift */; };
 		8C8F6EA6246F80190036F3FD /* JellyGifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F6EA5246F80190036F3FD /* JellyGifImageView.swift */; };
+		ACB4A36F2927CF8E00010734 /* JellyGifLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4A36E2927CF8E00010734 /* JellyGifLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8C8F6E9D246EEE650036F3FD /* GifInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifInfo.swift; sourceTree = "<group>"; };
 		8C8F6E9F246EEEEF0036F3FD /* JellyGifOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyGifOperation.swift; sourceTree = "<group>"; };
 		8C8F6EA5246F80190036F3FD /* JellyGifImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyGifImageView.swift; sourceTree = "<group>"; };
+		ACB4A36E2927CF8E00010734 /* JellyGifLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyGifLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				8C8F6E8C246EEBF00036F3FD /* Extensions */,
 				8C8F6EA4246F800D0036F3FD /* Views */,
+				ACB4A3702927CFDC00010734 /* Layers */,
 				8C8F6E98246EEE080036F3FD /* Models */,
 				8C8F6E94246EEDAD0036F3FD /* JellyGifAnimator.swift */,
 				8C8F6E9F246EEEEF0036F3FD /* JellyGifOperation.swift */,
@@ -103,6 +106,14 @@
 				8C8F6EA5246F80190036F3FD /* JellyGifImageView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ACB4A3702927CFDC00010734 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				ACB4A36E2927CF8E00010734 /* JellyGifLayer.swift */,
+			);
+			path = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8F6E8E246EEC300036F3FD /* CGImageSource+Extension.swift in Sources */,
+				ACB4A36F2927CF8E00010734 /* JellyGifLayer.swift in Sources */,
 				8C8F6EA0246EEEEF0036F3FD /* JellyGifOperation.swift in Sources */,
 				8C8F6E95246EEDAD0036F3FD /* JellyGifAnimator.swift in Sources */,
 				8C8F6E9A246EEE160036F3FD /* GifAnimationQuality.swift in Sources */,

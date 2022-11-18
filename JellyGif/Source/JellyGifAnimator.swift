@@ -14,12 +14,14 @@ public protocol JellyGifAnimatorDelegate: AnyObject {
     
     ///Registers an UIImageView to display GIF frames
     func imageViewForAnimator(_ sender: JellyGifAnimator) -> UIImageView?
+    func layerForAnimator(_ sender: JellyGifAnimator) -> CALayer?
     func gifAnimatorDidChangeImage(_ image: UIImage, sender: JellyGifAnimator)
 }
 
 public extension JellyGifAnimatorDelegate {
     func gifAnimatorIsReady(_ sender: JellyGifAnimator) { }
     func imageViewForAnimator(_ sender: JellyGifAnimator) -> UIImageView? { return nil }
+    func layerForAnimator(_ sender: JellyGifAnimator) -> CALayer? { return nil }
     func gifAnimatorDidChangeImage(_ image: UIImage, sender: JellyGifAnimator) { }
 }
 
@@ -163,6 +165,7 @@ public class JellyGifAnimator {
         currentDuration += displayLink.duration
         delegate?.gifAnimatorDidChangeImage(images[currentIndex], sender: self)
         delegate?.imageViewForAnimator(self)?.image = images[currentIndex]
+        delegate?.layerForAnimator(self)?.contents = images[currentIndex].cgImage
     }
     
     deinit {
